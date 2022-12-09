@@ -13,6 +13,7 @@ import {
 } from '../graphql/mutations';
 import {
   ListTasksQuery,
+  CreateTaskMutation,
   Task,
   CreateTaskInput,
   UpdateTaskInput
@@ -40,11 +41,14 @@ export const getTasks = async (setTasks: Dispatch<SetStateAction<Task[]>>) => {
  */
 export const addTask = async (task: CreateTaskInput) => {
   try {
-    await API.graphql({
+    const { data } = (await API.graphql({
       query: createTask,
       variables: { input: task },
       authMode: 'AMAZON_COGNITO_USER_POOLS'
-    });
+    })) as {
+      data: CreateTaskMutation
+    };
+    return data.createTask?.id;
   } catch (err) {
     console.log('erroring creating task: ', err);
   }
