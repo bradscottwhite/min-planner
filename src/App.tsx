@@ -51,14 +51,14 @@ const App = () => {
 							<div className='pt-20'>
 								<Routes>
 									<Route
-										path='/'
+										path='/min-planner/'
 										element={<Home
 											tasks={tasks}
 											cards={cards}
 										/>}
 									/>
 									<Route
-										path='/addTask/:key'
+										path='/min-planner/addTask/:key'
 										element={<AddTask
 											tasks={tasks}
 											cards={cards}
@@ -66,7 +66,7 @@ const App = () => {
 										/>}
 									/>
 									<Route
-										path='/edit/:id'
+										path='/min-planner/edit/:id'
 										element={<Edit
 											cards={cards}
 											tasks={tasks}
