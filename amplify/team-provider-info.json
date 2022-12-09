@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-minplanner-dev-173855-authRole",
+      "UnauthRoleArn": "arn:aws:iam::401622783535:role/amplify-minplanner-dev-173855-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::401622783535:role/amplify-minplanner-dev-173855-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-minplanner-dev-173855-deployment",
+      "UnauthRoleName": "amplify-minplanner-dev-173855-unauthRole",
+      "StackName": "amplify-minplanner-dev-173855",
+      "StackId": "arn:aws:cloudformation:us-east-1:401622783535:stack/amplify-minplanner-dev-173855/3153a410-771f-11ed-b733-1232682a975b",
+      "AmplifyAppId": "do22h6hr3ixuq"
+    },
+    "categories": {
+      "auth": {
+        "minplannerf06a4ccc": {}
+      },
+      "api": {
+        "minplanner": {}
+      }
+    }
+  }
+}
