@@ -32,7 +32,7 @@ export const Card: FC<{
 			<Tasks tasks={tasks} />
 			<Link
 				className='add grid grid-row-1 place-items-center'
-				to={`/addTask/${cardKey}`}
+				to={`/min-planner/addTask/${cardKey}`}
 			>
 				<ion-icon name="add-outline"></ion-icon>
 			</Link>

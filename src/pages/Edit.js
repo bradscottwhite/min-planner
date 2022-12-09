@@ -88,18 +88,18 @@ export const Edit: FC<{
 				/>
 				<div className='grid grid-cols-3 place-items-center py-6'>
 					<Link
-						to='/'
+						to='/min-planner/'
 						onClick={handleEdit}
 					>	
 						<ion-icon name="create-outline"></ion-icon>
 					</Link>
 					<Link
-						to='/'
+						to='/min-planner/'
 						onClick={handleDel}
 					>
 						<ion-icon name="trash-outline"></ion-icon>
 					</Link>
-					<Link to='/'>
+					<Link to='/min-planner/'>
 						<ion-icon name="close-outline"></ion-icon>
 					</Link>
 				</div>

@@ -71,12 +71,12 @@ export const AddTask: FC<{
 				/>
 				<div className='grid grid-cols-2 place-items-center py-6'>
 					<Link
-						to='/'
+						to='/min-planner/'
 						onClick={handleAdd}
 					>
 						<ion-icon name="create-outline"></ion-icon>
 					</Link>
-					<Link to='/'>
+					<Link to='/min-planner/'>
 						<ion-icon name="close-outline"></ion-icon>
 					</Link>
 				</div>

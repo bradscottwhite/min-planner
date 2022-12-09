@@ -55,7 +55,7 @@ export const Task: FC<{
 
 			<Link
 				className={'float-right ' + (priority === 1 ? 'hover:text-laurel-green' : 'hover:text-battleship-grey')}
-				to={`/edit/${id}`}
+				to={`/min-planner/edit/${id}`}
 			>
 				<ion-icon name="ellipsis-horizontal-outline"></ion-icon>
 			</Link>
