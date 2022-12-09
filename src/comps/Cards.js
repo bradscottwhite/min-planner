@@ -15,11 +15,11 @@ export const Cards: FC<{
 	tasks: TaskType,
 	cards: string[]
 }> = ({ tasks, cards }) => {
-	const cardTasksList = [];
+	let cardTasksList = [];
 	for (var i in cards) cardTasksList[i] = [];
 
 	// Sorts and populates card tasks array with tasks for each card:
-	tasks.map(task => cardTasksList[task.card].push(task));
+	tasks.forEach(task => cardTasksList[task.card].push(task));
 
 	const vars: Variants = {
 		closed: {
